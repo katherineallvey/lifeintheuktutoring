@@ -1,0 +1,11 @@
+<body>
+<div class="wrapper">
+	{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+
+    {{ range .Paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+
+</div>

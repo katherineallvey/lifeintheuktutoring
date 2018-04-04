@@ -1,3 +1,9 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://lifeintheuktutoring.co.uk/"
+languageCode = "en-gb"
+title = "Life in the UK Tutoring"
+canonifyURLs = true
+paginate = 4
+
+[permalinks]
+post = "/:year/:month/:filename/"
+code = "/:filename/"
