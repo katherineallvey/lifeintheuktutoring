@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<div class="content">
+    <h2>Blog</h2>
+</div>
+
+<div class="timeline">
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+
+    {{ range .Paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+
+    {{ template "template/pagination.html" . }}
+</div>
+{{ partial "footer.html" . }}

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.transitions {
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in; }
+
+#wrapper-sidebar {
+  z-index: 100;
+  position: absolute;
+  width: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #2B3448;
+  overflow-y: auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  #wrapper-sidebar .logo {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    #wrapper-sidebar .logo h1 {
+      font-weight: normal;
+      font-size: 26px;
+      color: #fff;
+      text-align: center; }
+  #wrapper-sidebar ul.menu {
+    list-style: none; }
+  #wrapper-sidebar a {
+    color: rgba(255, 255, 255, 0.6);
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    display: block;
+    padding: 15px;
+    text-decoration: none; }
+    #wrapper-sidebar a:hover {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.2); }
+  #wrapper-sidebar ul.social-media {
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0; }
+    #wrapper-sidebar ul.social-media li a {
+      padding: 20px;
+      font-size: 20px;
+      display: inline-block;
+      border-right: 1px solid rgba(255, 255, 255, 0.2); }
+  #wrapper-sidebar.initial-state .wide-text {
+    display: none; }
+  #wrapper-sidebar.collapsed {
+    width: 50px; }
+    #wrapper-sidebar.collapsed .wide-text {
+      display: none; }
+
+#wrapper-main {
+  overflow-y: scroll;
+  position: absolute;
+  -webkit-overflow-scrolling: touch !important;
+  -webkit-overflow-scrolling: touch;
+  top: 0;
+  right: 0;
+  left: 300px;
+  bottom: 0; }
+  #wrapper-main.collapsed {
+    left: 50px; }
+
+.content {
+  max-width: 800px;
+  padding: 20px; }
+  .content p {
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #333; }
+  .content h2 {
+    margin: 20px 0;
+    font-size: 32px;
+    color: #68737D; }
+
+.footer {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  max-width: 800px; }
+
+.timeline {
+  margin-left: 40px;
+  padding-left: 50px;
+  border-left: 1px solid #ccc; }
+
+.blog-post-summary {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0 60px 0; }
+  .blog-post-summary .post-date {
+    position: absolute;
+    top: 10px;
+    left: -65px;
+    width: 40px;
+    background: #fff;
+    font-size: 13px;
+    color: #777;
+    padding: 5px 0;
+    font-style: italic;
+    font-family: serif; }
+  .blog-post-summary:last-of-type {
+    border-bottom: none; }
+
+.blog-post {
+  padding-right: 30px; }
+  .blog-post .post-title {
+    margin-bottom: 20px; }
+    .blog-post .post-title a h3 {
+      font-size: 22px;
+      color: #2B3448;
+      line-height: 14px; }
+    .blog-post .post-title aside {
+      color: #68737D;
+      font-size: 14px; }
+  .blog-post p:last-of-type {
+    margin-bottom: 0; }
+
+ul.pagination {
+  display: inline-block;
+  border: 1px solid #ccc; }
+  ul.pagination:after {
+    content: "";
+    display: table;
+    clear: both; }
+  ul.pagination li {
+    float: left;
+    border-right: 1px solid #ccc; }
+    ul.pagination li:last-of-type {
+      border-right: none; }
+    ul.pagination li a {
+      padding: 5px;
+      display: block;
+      color: #333;
+      width: 30px;
+      text-align: center; }
+    ul.pagination li.active a {
+      background-color: #9fabc6;
+      color: #fff; }
+
+@media (max-width: 600px) {
+  #wrapper-sidebar {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
+
+  #wrapper-sidebar.initial-state {
+    width: 50px; }
+
+  #wrapper-sidebar.collapsed {
+    box-shadow: none; }
+    #wrapper-sidebar.collapsed .wide-text {
+      display: none; }
+
+  #wrapper-main {
+    left: 50px; } }
+
+/*# sourceMappingURL=site.css.map */

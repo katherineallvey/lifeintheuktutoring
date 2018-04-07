@@ -1,0 +1,17 @@
+<div class="blog-post-summary">
+    <div class="post-date">
+        {{ .Date.Format "Jan 2 2006"}}
+    </div>
+
+    <div class="blog-post">
+        <div class="post-title">
+            <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+        </div>
+        
+        {{ .Summary }}
+
+        <p>
+            <a href="{{ .RelPermalink }}">Continue reading...</a>
+        </p>
+    </div>
+</div>
