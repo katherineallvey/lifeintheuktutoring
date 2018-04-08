@@ -26,6 +26,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+  #wrapper-sidebar a#toggle-menu {
+    text-align: right; }
   #wrapper-sidebar .logo {
     padding: 40px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
@@ -63,6 +65,8 @@ body {
     width: 50px; }
     #wrapper-sidebar.collapsed .wide-text {
       display: none; }
+    #wrapper-sidebar.collapsed a#toggle-menu {
+      text-align: center; }
 
 #wrapper-main {
   overflow-y: scroll;
@@ -87,6 +91,10 @@ body {
     margin: 20px 0;
     font-size: 32px;
     color: #68737D; }
+  .content h3 {
+    font-size: 24px; }
+  .content h4 {
+    font-size: 20px; }
 
 .footer {
   font-size: 12px;
@@ -158,6 +166,7 @@ ul.pagination {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
 
   #wrapper-sidebar.initial-state {
+    box-shadow: none;
     width: 50px; }
 
   #wrapper-sidebar.collapsed {

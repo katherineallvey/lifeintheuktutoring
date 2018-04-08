@@ -40,6 +40,10 @@ body {
     -ms-user-select: none;
     user-select: none;
 
+    a#toggle-menu {
+        text-align: right;
+    }
+
     .logo {
         padding: 40px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -98,6 +102,10 @@ body {
         .wide-text {
             display: none;
         }
+
+        a#toggle-menu {
+            text-align: center;
+        }
     }
 }
 
@@ -132,6 +140,13 @@ body {
         margin: 20px 0;
         font-size: 32px;
         color: #68737D;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
     }
 }
 
@@ -191,8 +206,6 @@ body {
     }
 }
 
-
-
 ul.pagination {
     @include clearfix;
 
@@ -226,7 +239,9 @@ ul.pagination {
     #wrapper-sidebar {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     }
+
     #wrapper-sidebar.initial-state {
+        box-shadow: none;
         width: 50px;
     }
 

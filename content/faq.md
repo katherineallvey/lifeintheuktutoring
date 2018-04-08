@@ -4,7 +4,6 @@ title = "Frequently Asked Questions"
 type = "page"
 
 +++
-Frequently Asked Questions
 
 #### How can I make a booking?
 
