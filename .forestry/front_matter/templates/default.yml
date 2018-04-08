@@ -1,5 +1,6 @@
 ---
 pages:
+- book.md
 - rates.md
 - blog/henry-viii.md
 hide_body: false
