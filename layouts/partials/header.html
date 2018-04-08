@@ -34,7 +34,6 @@
                 if (typeof ga === "function") {
                     ga('send', 'pageview', location.pathname + location.search);
                 }
-                
                 adjustSidebar();
                 $("#wrapper-sidebar").addClass("transitions");
                 $(window).resize(adjustSidebar);
@@ -65,7 +64,6 @@
                     $("#wrapper-sidebar").addClass("collapsed");
                     $("#wrapper-main").addClass("collapsed");
                 } else {
-                    console.log("making not collapsed");
                     $("#wrapper-sidebar").removeClass("initial-state");
                     $("#wrapper-sidebar").removeClass("collapsed");
                     $("#wrapper-main").removeClass("collapsed");
@@ -77,7 +75,7 @@
 </head>
 <body>
 <div id="wrapper-sidebar" class="initial-state">
-    <a id="toggle-menu" data-no-instant><i class="fas fa-bars"></i></a>
+    <a href="#" id="toggle-menu" data-no-instant><i class="fas fa-bars"></i></a>
 
     <div class="logo">
         <h1 class="wide-text">Life in the UK<br>Tutoring</h1>
