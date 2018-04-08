@@ -1,6 +1,7 @@
 ---
 title: Henry VIII
 date: 2018-04-06 00:00:00 +0000
+draft: true
 
 ---
 Henry became King in 1509.  His dad, Henry VII, had left England with a lot of spare money, so Henry made a really good start to his reign.  Henry VII also wanted centralised power, where the whole of England was led by one person and all the decisions were made by the king and his advisors.  Henry thought this was a great idea too and carried on witht his policy.
