@@ -8,3 +8,8 @@ type = "page"
 
 Standard Session - £30/hour  
 Group Session - £20/hour per person
+
+  
+Lunchtime tutoring session -  £15
+
+Near Bank London Underground station.
