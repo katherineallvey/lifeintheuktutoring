@@ -31,6 +31,7 @@
     <script data-no-instant>
         $(function() {
             InstantClick.on('change', function() {
+                ga('send', 'pageview', location.pathname + location.search);
                 adjustSidebar();
                 $("#wrapper-sidebar").addClass("transitions");
 
