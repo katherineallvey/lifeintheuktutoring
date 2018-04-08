@@ -8,6 +8,8 @@ I founded Life in the UK Tutoring after helping my former partner with his citiz
 
 I have three years experience teaching English as a Second Language abroad, eighteen months of which was in a management role.  I then gained a PGCE in Secondary English and taught in a variety of schools in Nottingham and South London.
 
+Along the way, I qualified as a Cambridge Trinity Examiner.  The language requirement for Citzenship sometimes felt like a lucky draw: bright and dedicated learners could freeze up and the 'wrong' task could work out incredibly well for a shy candidate.  I tutored numerous pre-sessional candidates and helped them start their journey towards settling in Britain.
+
 As I'm passionate about enabling English learners to make the most of London, I ran intervention classes and community language classes for parents.  The knowledge that we take for granted, notably how to get an Oyster Card, is not obvious.  The Life in the UK test is not designed to be an explicit reflection of our life in London but rather a crash course in British Values.
 
 Using our affordable range of tuition packages, you will be able to get a grip on the facts you need to pass your test and practice your language skills before tackling the Cambridge Trinity exam.
