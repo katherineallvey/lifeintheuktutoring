@@ -7,6 +7,10 @@
     <meta name="description" content="{{ .Description }}">
     <meta name="author" content="Katherine Allvey">
     <meta name="google-site-verification" content="jsl6YG5NEiRYppUdQesWlZBIO290b_4zs6QLCt_-es8" />
+    <meta name="viewport" content="minimal-ui">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     {{if .IsHome}}
     <title>Home | {{ .Site.Title }}</title>
@@ -39,8 +43,11 @@
                 $(window).resize(adjustSidebar);
             });
 
-            $(document).on('click', 'a#toggle-menu', toggleSidebar);
-            $(document).on('click', '#wrapper-main', collapseSidebar);
+            $(document).on('mousedown', 'a#toggle-menu', toggleSidebar);
+            $(document).on('mousedown', '#wrapper-main', collapseSidebar);
+            $(document).on('touchend', '#wrapper-main', collapseSidebar);
+            // $('#wrapper-main').bind("touchend", collapseSidebar);
+
 
             InstantClick.init();
 
@@ -75,26 +82,28 @@
 </head>
 <body>
 <div id="wrapper-sidebar" class="initial-state">
-    <a href="#" id="toggle-menu" data-no-instant><i class="fas fa-bars"></i></a>
+    <div class="scrollable">
+        <a href="#" id="toggle-menu" data-no-instant><i class="fas fa-bars"></i></a>
 
-    <div class="logo">
-        <h1 class="wide-text">Life in the UK<br>Tutoring</h1>
+        <div class="logo">
+            <h1 class="wide-text">Life in the UK<br>Tutoring</h1>
+        </div>
+
+        <ul class="social-media wide-text">
+            <li>
+                <a href="https://twitter.com/lituktutoring" rel="external"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+
+        <ul class="menu">
+            <li><a href="/"><i class="fas fa-fw fa-home"></i> <span class="wide-text">Home</span></a></li>
+            <li><a href="/about"><i class="fas fa-fw fa-graduation-cap"></i> <span class="wide-text">About Us</span></a></li>
+            <li><a href="/rates"><i class="fas fa-fw fa-pound-sign"></i> <span class="wide-text">Tutoring Rates &amp; Availability</span></a></li>
+            <li><a href="/book"><i class="fas fa-fw fa-pencil-alt"></i> <span class="wide-text">Book a Lesson</span></a></li>
+            <li><a href="/faq"><i class="fas fa-fw fa-question"></i> <span class="wide-text">Frequently Asked Questions</span></a></li>
+            <li><a href="/practice-tests"><i class="fas fa-fw fa-file-alt"></i> <span class="wide-text">Practice Tests</span></a></li>
+            <li><a href="/blog"><i class="fas fa-fw fa-rss"></i> <span class="wide-text">Blog</span></a></li>
+        </ul>
     </div>
-
-    <ul class="social-media wide-text">
-        <li>
-            <a href="https://twitter.com/lituktutoring" rel="external"><i class="fab fa-twitter"></i></a>
-        </li>
-    </ul>
-
-    <ul class="menu">
-        <li><a href="/"><i class="fas fa-fw fa-home"></i> <span class="wide-text">Home</span></a></li>
-        <li><a href="/about"><i class="fas fa-fw fa-graduation-cap"></i> <span class="wide-text">About Us</span></a></li>
-        <li><a href="/rates"><i class="fas fa-fw fa-pound-sign"></i> <span class="wide-text">Tutoring Rates &amp; Availability</span></a></li>
-        <li><a href="/book"><i class="fas fa-fw fa-pencil-alt"></i> <span class="wide-text">Book a Lesson</span></a></li>
-        <li><a href="/faq"><i class="fas fa-fw fa-question"></i> <span class="wide-text">Frequently Asked Questions</span></a></li>
-        <li><a href="/practice-tests"><i class="fas fa-fw fa-file-alt"></i> <span class="wide-text">Practice Tests</span></a></li>
-        <li><a href="/blog"><i class="fas fa-fw fa-rss"></i> <span class="wide-text">Blog</span></a></li>
-    </ul>
 </div>
 <div id="wrapper-main">

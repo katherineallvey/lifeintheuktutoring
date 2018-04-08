@@ -24,8 +24,12 @@ body {
 }
 
 #wrapper-sidebar {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+
+
     z-index: 100;
-    position: absolute;
+    position: fixed;
     width: 300px;
     top: 0;
     left: 0;
@@ -39,6 +43,17 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    -webkit-overflow-scrolling: touch !important;
+
+    .scrollable {
+        position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow-y: scroll;
+    }
 
     a#toggle-menu {
         text-align: right;
@@ -69,8 +84,8 @@ body {
         display: block;
         padding: 15px;
         text-decoration: none;
-        
-        &:hover {
+
+        &:active {
             color: #fff;
             background-color: rgba(0, 0, 0, 0.2);
         }
@@ -110,10 +125,9 @@ body {
 }
 
 #wrapper-main {
-    overflow-y: scroll;
+    // overflow-y: scroll;
     position: absolute;
     -webkit-overflow-scrolling: touch !important;
-    -webkit-overflow-scrolling: touch;
 
     top: 0;
     right: 0;
