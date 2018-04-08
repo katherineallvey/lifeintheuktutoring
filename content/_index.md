@@ -3,4 +3,4 @@ title = "Home"
 type = "page"
 
 +++
-Home page.
+Life in the UK Tutoring home page.

@@ -1,9 +1,9 @@
 ---
 pages:
-- practice-tests.md
-- faq.md
-- book.md
 - rates.md
+- book.md
+- faq.md
+- practice-tests.md
 - blog/henry-viii.md
 hide_body: false
 fields:
