@@ -1,8 +1,9 @@
 ---
-title: "Second blog post"
-date: "2018-04-07"
----
+title: Second blog post
+date: 2018-04-07 00:00:00 +0000
+draft: true
 
+---
 Vivamus in sollicitudin neque, eget malesuada urna. Fusce in pharetra velit, id venenatis risus. Phasellus at euismod est. Curabitur dignissim lorem id felis mollis eleifend. Nunc ultrices, nisl vel sodales malesuada, turpis magna pulvinar magna, non cursus dui ante quis ligula. 
 
 <!--more-->
