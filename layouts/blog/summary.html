@@ -8,10 +8,16 @@
             <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
         </div>
         
-        {{ .Summary }}
+        {{ if .Truncated }}
+            {{ .Summary }}
+        {{ else }} 
+            {{ .Content }}
+        {{ end }}
 
+        {{ if .Truncated }}
         <p>
             <a href="{{ .RelPermalink }}">Continue reading...</a>
         </p>
+        {{ end }}
     </div>
 </div>
