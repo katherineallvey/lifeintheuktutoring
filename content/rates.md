@@ -4,4 +4,7 @@ title = "Tutoring Rates & Availability"
 type = "page"
 
 +++
-Tutoring Rates & Availability
+#### Basic Rates
+
+Standard Session - £30/hour  
+Group Session - £20/hour per person
