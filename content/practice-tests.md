@@ -1,6 +1,7 @@
 +++
-date = "2018-04-08T10:24:35+00:00"
+date = "2018-04-08T10:24:35Z"
 title = "Practice Tests"
+type = "page"
 
 +++
-Practice Tests
+Practice Tests will go here.
