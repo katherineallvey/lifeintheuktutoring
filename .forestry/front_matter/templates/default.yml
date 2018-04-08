@@ -1,4 +1,6 @@
 ---
+pages:
+- blog/henry-viii.md
 hide_body: false
 fields:
 - name: title
